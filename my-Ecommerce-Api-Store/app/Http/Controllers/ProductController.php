@@ -14,8 +14,9 @@ class ProductController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        return Product::all();
+    { 
+        // return Product::all();
+        return ProductResource::collection(Product::all());
     }
 
     /**

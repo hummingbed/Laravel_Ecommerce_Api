@@ -14,15 +14,7 @@ class ProductResource extends JsonResource
      */
     public function toArray($request)
     {
-        // return parent::toArray($request);
-        function stC(){
-            if($this->stock > 0){
-                return $this->stock;
-            }else{
-                return 'out of stock';
-            }
-        }
-       
+             
         return [
             'name' => $this->name,
             'detail' => $this->detail,
