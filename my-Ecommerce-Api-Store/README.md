@@ -9,6 +9,7 @@
 - VALUE: application/json
 - VALUE: application/json
 ## json body
+```
 {
     "grant_type" : "password",
     "client_id" : "2",
@@ -17,3 +18,4 @@
     "password" : "12345678"
 }
 
+```
